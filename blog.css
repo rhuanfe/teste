@@ -1,0 +1,142 @@
+@media (min-width: 768px) {
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(4, auto);
+    gap: 10px; 
+}
+.texto{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 10px;
+}
+.text{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 10px;
+}
+.historia{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(3,350px);
+    grid-template-areas: 
+    "red blue purple"
+    "red green gray"
+    "white black gray";
+    gap: 10px;
+}
+.jogadores{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 350px 350px 350px;
+    gap: 10px; 
+}
+}
+
+.texto article{
+    grid-column: span 3;
+}
+.texto p{
+    color: black;
+}
+.red{
+    grid-area: red;
+}
+.blue{
+    grid-area: blue;
+}
+.purple{
+    grid-area: purple;
+}
+.green{
+    grid-area: green;
+}
+.white{
+    grid-area: white;
+}
+.gray{
+    grid-area: gray;
+}
+.black{
+    grid-area: black;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+main {
+    background-color: #333;
+    padding: 20px;
+}
+
+article {
+    background-color: #fff;
+}
+article h1{
+    font-size: 40px;
+}
+article h2{
+    font-size: 24px;
+    color: white;
+}
+article{
+    color: white;
+    background-color: #333;
+}
+article p {
+    font-size: 18px;
+    color: white;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+/* Tamanho de textos */
+.p1{
+
+    font-size: 100px;
+}
+.p2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 70px;
+}
+.p3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 70px;
+}
+img:hover{
+    opacity: 0.5;;
+}
+div h1{
+    justify-items: center;
+    align-items: center;
+    color: white;
+}
